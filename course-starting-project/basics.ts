@@ -1,4 +1,4 @@
-function add(n1: number, n2: number, showResult: boolean, phrase: string) :number {
+function add(n1: number, n2: number, showResult: boolean, phrase: string): number {
     console.log(typeof n1)
     const result = n1 + n2;
     if (showResult) {
@@ -6,6 +6,7 @@ function add(n1: number, n2: number, showResult: boolean, phrase: string) :numbe
     } else {
         return result;
     }
+    return result;
 }
 
 const number1 = 5;

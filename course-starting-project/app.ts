@@ -1,15 +1,7 @@
-let userInput: unknown;
-let userName: string;
+// tsc app.ts -w (watch mode)
+// tsc --init (load all files in the project)
+// use "tsc" to update
 
-userInput = 5;
-userInput = "max";
-if (typeof userInput === "string"){
-    userName = userInput;
-}
+const userName2= "hello";
 
-function generateError(message: string, code: number): never{
-    throw {message: message, errorCode: code};
-}
-
-
-generateError("An error occurred!", 500);
+console.log(userName2);
