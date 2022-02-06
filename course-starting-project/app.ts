@@ -1,16 +1,15 @@
-function add(n1: number, n2: number, showResult: boolean, phrase: string) :number {
-    console.log(typeof n1)
-    const result = n1 + n2;
-    if (showResult) {
-        console.log(phrase + result)
-    } else {
-        return result;
-    }
+let userInput: unknown;
+let userName: string;
+
+userInput = 5;
+userInput = "max";
+if (typeof userInput === "string"){
+    userName = userInput;
 }
 
-const number1 = 5;
-const number2 = 2.8;
-const printResult = true;
-const resultPhrase = "Result is: "
+function generateError(message: string, code: number): never{
+    throw {message: message, errorCode: code};
+}
 
-const result = add(number1, number2, printResult, resultPhrase);
+
+generateError("An error occurred!", 500);
